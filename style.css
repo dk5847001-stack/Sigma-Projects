@@ -319,6 +319,9 @@ footer .Question {
     footer .Question {
         margin: 10px 12.3vw 30px 12.3vw;
     }
+    nav{
+        max-width: 85vw;
+    }
 }
 
 .footer-item {
