@@ -5,7 +5,8 @@
     padding: 0;
     font-family: "Roboto Mono", monospace;
 }
-body{
+
+body {
     background-color: black;
     color: white;
 }
@@ -45,36 +46,112 @@ body{
     padding: 5px 10px;
     font-size: 13px;
 }
-.heading img{
+
+.heading img {
     width: 30px;
 }
-.library{
+
+.library {
     min-height: 77vh;
     position: relative;
 }
-.footer{
+
+.footer {
     display: flex;
     font-size: 7.6px;
     color: gray;
     gap: 13px;
     position: absolute;
     bottom: 0;
+    margin: 10px 0;
 }
-.footer a{
+
+.footer a {
     color: gray;
     /* text-decoration: none; */
 }
-.right{
+
+.right {
     margin: 16px 10px 0 0;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     background-color: rgb(24, 24, 24);
 }
-.header > *{
+
+.header>* {
     padding: 20px;
 }
-.spotifyPlaylists{
+
+.spotifyPlaylists {
     padding: 15px;
+}
+
+.spotifyPlaylists .card {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    margin-top: 10px;
+}
+
+.cardContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card p {
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+.play {
+    position: absolute;
+    top: 115px;
+    left: 107px;
+    border-radius: 100px solid black;
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+.signupbtn{
+    background-color: rgb(24, 24, 24);
+    color: gray;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.signupbtn:hover{
+    font-size: 15px;
+    color: white;
+}
+button {
+    margin: 0 4px;
+}
+.loginbtn{
+    border-radius: 19px;
+    background-color: white;
+    color: black;
+    padding: 9px 17px;
+    border: none;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    font-weight: bold;
+    box-shadow: 0 0 5px white;
+    transition: all 1s ease-in-out;
+    transform: calc(1.3);
 }
